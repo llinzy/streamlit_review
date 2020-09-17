@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 
 
-data=pd.read_csv('rf_data.csv')
+data=pd.read_csv('result_data.csv')
 cfmatx=pd.read_csv('rf_confusion_matrix.csv')
 metric_df=pd.read_csv('metric_df.csv')
 top5_df=pd.read_csv('top5_df.csv')
