@@ -11,8 +11,10 @@ metric_df=pd.read_csv('metric_df.csv')
 top5_df=pd.read_csv('top5_df.csv')
 
 st.write("""
-Interpretations for the Random Forest Credit Data Predictions: The goal is to obtain a model that
-may be used to identify factors that make an applicant at higher risk of default. 
+Interpretations for the Random Forest Credit Default Predictions""")
+
+st.write("""The goal is to obtain a model that may be used to identify 
+factors that make an applicant at higher risk of default. 
 """)
 
 st.subheader('Results')
