@@ -14,14 +14,14 @@ Interpretations for the Random Forest Credit Data Predictions
 """)
 
 st.subheader('Results')
-default_type=st.multiselect('Select a Default Type', list(data.DEFAULTS.unique()), default=[0,1])
-new_data=data[data.DEFAULTS.isin(default_type)]
+default_type=st.multiselect('Select a Default Type', list(data.DEFAULT.unique()), default=[0,1])
+new_data=data[data.DEFAULT.isin(default_type)]
 st.write(new_data.iloc[:,1:])
 
 st.subheader('Chart')
 pred=st.selectbox('X', data.columns[0:3], index=2)
 deft=st.selectbox('Y', data.columns[0:3], index=1)
-fig = px.scatter(new_data, x =pred,y=deft, color='DEFAULTS')
+fig = px.scatter(new_data, x =pred,y=deft, color='DEFAULT')
 st.plotly_chart(fig)
 
 st.subheader('Confusion Matrix')
