@@ -377,8 +377,8 @@ def metric (confusion_matrix):
 		tp=cm2[1]
 		accuracy=(tn+tp)/(tn+fn+fp+tp)
 		missclass=(fn+fp)/(tn+fn+fp+tp)
-		precision=tp/(fp+tp)
-		sensitivity=tp/(fn+tp)
+		sensitivity=tp/(fp+tp)
+		precision=tp/(fn+tp)
 	except TypeError:
 		print("Problem with confusion matrix. Fix format!")
 	else:
