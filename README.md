@@ -1,7 +1,7 @@
 # streamlit_review
 Goal: train and review practical usage for streamlit application
 
-Interactive web application: https://lkstreamlit.herokuapp.com/
+Interactive web application: [https://lkstreamlit.herokuapp.com/](https://streamlit-review-23041f08c79c.herokuapp.com/)
 
 Procedure:
 1. Using the results from the best performing prediction model shown in rf_model/run_output.ipynb, visualize results in streamlit application
